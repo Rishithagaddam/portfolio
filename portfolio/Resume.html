@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script>
+        function showResume() {
+            document.getElementById('resume-image').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Resume</a>
+        <nav class="navbar">
+            <a href="portfolio.html">Home</a>
+            <a href="techstack.html">Tech Stack</a>
+            <a href="experience.html">Experience</a>
+            <a href="projects.html">Projects</a>
+        </nav>
+    </header>
+    
+    <section class="resume-section">
+        <div class="resume-container">
+            <div class="resume-left">
+                <button class="btn" onclick="showResume()">View Resume</button>
+                <img id="resume-image" src="Screenshot 2025-02-16 000909.png" alt="Resume Picture" class="resume-img" style="display: none;">
+            </div>
+            <div class="resume-right">
+                <h2>Contact Details</h2>
+                <p><i class="fas fa-user"></i> Gaddam Rishitha</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:rishithagaddam79@gmail.com">rishithagaddam79@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Telangana, India</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rishithagaddam" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/rishithagaddam" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:rishithagaddam79@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

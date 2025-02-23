@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(18, 16, 16);
+}
+
+body {
+    color: white;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+}
+
+.navbar a {
+    color: rgb(181, 178, 178);
+    text-decoration: none;
+    font-weight: 550;
+    margin-left: 50px;
+    transition: 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: cyan;
+}
+
+.techstack {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.techstack h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: cyan;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: cyan;
+    text-decoration: none;
+}
+.techstack p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: lightgray;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.tech-card {
+    width: 120px;
+    height: 120px;
+    background: rgb(28, 28, 28);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.tech-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 255, 255, 0.6);
+}
+
+.tech-card i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    background: none;
+}
